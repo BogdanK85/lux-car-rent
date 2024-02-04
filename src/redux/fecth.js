@@ -1,6 +1,5 @@
-import axios from 'axios';
-
 import { createAsyncThunk } from '@reduxjs/toolkit';
+import axios from 'axios';
 
 axios.defaults.baseURL = 'https://65bbb85152189914b5bcf1b1.mockapi.io';
 
@@ -15,7 +14,7 @@ const getAllCars = async (_, thunkAPI) => {
   }
 };
 
-const getCars = async (_, thunkAPI) => {
+const getCars = async (page, thunkAPI) => {
   try {
     const response = await axios.get(`/adverts?page=${page}&limit=${LIMIT}`);
     return response.data;
@@ -26,4 +25,4 @@ const getCars = async (_, thunkAPI) => {
 
 export const getCarsThunk = createAsyncThunk('cars/getCars', getCars);
 
-export const getAllCarsThunk = createAsyncThunk('cars/getAllCars', getAllCarss);
+export const getAllCarsThunk = createAsyncThunk('cars/getAllCars', getAllCars);

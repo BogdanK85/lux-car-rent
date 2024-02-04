@@ -1,4 +1,5 @@
 import { createSlice, isAnyOf } from '@reduxjs/toolkit';
+import { takeSpecialCarsMarke } from 'helpers/takeSpecialMarke';
 const { getAllCarsThunk, getCarsThunk } = require('./fecth');
 
 const carsInitialState = {
@@ -25,13 +26,13 @@ const addStatusToActs = status => arrayOfActs.map(elem => elem[status]);
 
 const carsSlice = createSlice({
   name: 'cars',
-  carsInitialState: carsInitialState,
-  extraRedusers: builder => {
+  initialState: carsInitialState,
+  extraReducers: builder => {
     builder
       .addCase(getAllCarsThunk.fulfilled, (state, { payload }) => {
         state.isLoading = false;
         state.allCars = payload;
-        state.carsBrands = makeUniqueBrandsState(payload);
+        state.carsBrands = takeSpecialCarsMarke(payload);
         state.error = null;
       })
       .addCase(getCarsThunk.fulfilled, (state, { payload }) => {

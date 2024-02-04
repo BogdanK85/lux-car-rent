@@ -1,67 +1,15 @@
 [
   {
-    "id": 9586,
-    "year": 2020,
-    "make": "Volvo",
-    "model": "XC60",
-    "type": "SUV",
-    "photoLink": "https://ftp.goit.study/img/cars-test-task/volvo_xc60_2.jpeg",
-    "description": "The Volvo XC60 is a luxurious and versatile SUV that combines Scandinavian design, advanced safety features, and a comfortable driving experience, making it an ideal choice for families and adventure enthusiasts.",
-    "fuelConsumption": "8.5",
-    "engineSize": "2.0L 4-cylinder",
-    "accessories": [
-      "Leather upholstery",
-      "Panoramic sunroof",
-      "Harman Kardon premium sound system"
-    ],
-    "functionalities": [
-      "All-Wheel Drive",
-      "City Safety collision avoidance technology",
-      "Power tailgate"
-    ],
-    "rentalPrice": "$70",
-    "rentalCompany": "Premium Car Rentals",
-    "address": "987 Example Road, Dnipro, Ukraine",
-    "rentalConditions": "Minimum age: 25\nValid driver's license\nSecurity deposit and insurance required",
-    "mileage": 6618
-  },
-  {
-    "id": 9618,
-    "year": 2020,
-    "make": "Land Rover",
-    "model": "Range Rover Sport",
-    "type": "SUV",
-    "photoLink": "https://ftp.goit.study/img/cars-test-task/land_rover_range_rover_sport.jpeg",
-    "description": "The Land Rover Range Rover Sport is a premium SUV that offers a perfect blend of luxury, off-road capability, and dynamic performance, providing a refined driving experience both on and off the road.",
-    "fuelConsumption": "11.8",
-    "engineSize": "3.0L V6",
-    "accessories": [
-      "Premium Windsor leather seats",
-      "Meridian surround sound system",
-      "Adaptive Dynamics suspension"
-    ],
-    "functionalities": [
-      "All-Wheel Drive",
-      "Terrain Response 2 system",
-      "Power-operated gesture tailgate"
-    ],
-    "rentalPrice": "$90",
-    "rentalCompany": "Luxury SUV Rentals",
-    "address": "654 Example Street, Lviv, Ukraine",
-    "rentalConditions": "Minimum age: 25\nValid driver's license\nSecurity deposit and insurance required",
-    "mileage": 4856
-  },
-
-  {
     "id": 9677,
     "year": 2020,
-    "make": "Hyundai ",
-    "model": "Sonata ",
+    "make": "Mercedes-Benz",
+    "model": "Amg-63 ",
     "type": "Sedan, Hatchback",
-    "photoLink": "https://media.ed.edmunds-media.com/hyundai/sonata-hybrid/2020/oem/2020_hyundai_sonata-hybrid_sedan_limited_fq_oem_1_1600.jpg",
-    "description": "The Hyundai Sonata is a versatile and fuel-efficient vehicle available in both sedan and hatchback body styles, offering a comfortable cabin, modern features, and a smooth driving experience, making it an attractive choice for urban commuters.",
-    "fuelConsumption": "8.2",
-    "engineSize": "2.0L 4-cylinder",
+    "img": "https://images.unsplash.com/photo-1553440569-bcc63803a83d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fGNhcnN8ZW58MHx8MHx8fDA%3D",
+    "photoLink": "https://images.unsplash.com/photo-1553440569-bcc63803a83d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fGNhcnN8ZW58MHx8MHx8fDA%3D",
+    "description": "The Mercedes-Benz Amg-63 is a versatile and fuel-efficient vehicle available in both sedan and hatchback body styles, offering a comfortable cabin, modern features, and a smooth driving experience, making it an attractive choice for urban commuters.",
+    "fuelConsumption": "18.2",
+    "engineSize": "6.2L 12-cylinder",
     "accessories": [
       "Apple CarPlay and Android Auto integration",
       "Smart Key with Push Button Start",
@@ -72,7 +20,7 @@
       "Electronic Stability Control",
       "Rearview camera"
     ],
-    "rentalPrice": "$40",
+    "rentalPrice": "$90",
     "rentalCompany": "Economy Car Rentals",
     "address": "321 Example Lane, Kharkiv, Ukraine",
     "rentalConditions": "Minimum age: 21\nValid driver's license\nSecurity deposit and insurance required",
@@ -84,6 +32,7 @@
     "make": "Audi",
     "model": "Q8",
     "type": "SUV",
+    "img": "https://di-uploads-pod11.dealerinspire.com/reevesimportmotorcars/uploads/2019/12/2020-q8.jpg",
     "photoLink": "https://di-uploads-pod11.dealerinspire.com/reevesimportmotorcars/uploads/2019/12/2020-q8.jpg",
     "description": "The Audi Q8 is a premium SUV that offers a perfect blend of luxury, off-road capability, and dynamic performance, providing a refined driving experience both on and off the road.",
     "fuelConsumption": "11.8",
@@ -110,6 +59,7 @@
     "make": "Lamborghini",
     "model": "Urus",
     "type": "SUV",
+    "img": "https://cdn.carbuzz.com/gallery-images/1600/929000/700/929795.jpg",
     "photoLink": "https://cdn.carbuzz.com/gallery-images/1600/929000/700/929795.jpg",
     "description": "The Lamborghini Urus is a premium SUV that offers a perfect blend of luxury, off-road capability, and dynamic performance, providing a refined driving experience both on and off the road.",
     "fuelConsumption": "17.8",
@@ -136,6 +86,7 @@
     "make": "BMW",
     "model": "X6",
     "type": "SUV",
+    "img": "https://www.motortrend.com/uploads/sites/5/2020/02/2020-BMW-X6-M-3.jpg",
     "photoLink": "https://www.motortrend.com/uploads/sites/5/2020/02/2020-BMW-X6-M-3.jpg",
     "description": "The BMW X6 is a premium SUV that offers a perfect blend of luxury, off-road capability, and dynamic performance, providing a refined driving experience both on and off the road.",
     "fuelConsumption": "11.8",
@@ -162,6 +113,7 @@
     "make": "Audi",
     "model": "A6",
     "type": "Sedan, Hatchback",
+    "img": "https://images.cars.com/cldstatic/wp-content/uploads/audi-s6-2020-01-angle--exterior--front--grey.jpg",
     "photoLink": "https://images.cars.com/cldstatic/wp-content/uploads/audi-s6-2020-01-angle--exterior--front--grey.jpg",
     "description": "The Audi A6 is a versatile and fuel-efficient vehicle available in both sedan and hatchback body styles, offering a comfortable cabin, modern features, and a smooth driving experience, making it an attractive choice for urban commuters.",
     "fuelConsumption": "10.2",
@@ -188,6 +140,7 @@
     "make": "Nissan",
     "model": "GTR",
     "type": "Sedan, Hatchback",
+    "img": "https://www.motortrend.com/uploads/2022/11/2023-Nissan-GT-R-front-three-quarter-view-9.jpg",
     "photoLink": "https://www.motortrend.com/uploads/2022/11/2023-Nissan-GT-R-front-three-quarter-view-9.jpg",
     "description": "The Nissan GTR is a versatile and fuel-efficient vehicle available in both sedan and hatchback body styles, offering a comfortable cabin, modern features, and a smooth driving experience, making it an attractive choice for urban commuters.",
     "fuelConsumption": "10.8",
@@ -214,6 +167,7 @@
     "make": "Mitsubishi ",
     "model": "Lancer ",
     "type": "Sedan, Hatchback",
+    "img": "https://s1.cdn.autoevolution.com/images/news/new-mitsubishi-evolution-xi-is-merely-wishful-thinking-but-it-would-be-great-for-the-us-216108-7.jpg",
     "photoLink": "https://s1.cdn.autoevolution.com/images/news/new-mitsubishi-evolution-xi-is-merely-wishful-thinking-but-it-would-be-great-for-the-us-216108-7.jpg",
     "description": "The Mitsubishi Lancer is a versatile and fuel-efficient vehicle available in both sedan and hatchback body styles, offering a comfortable cabin, modern features, and a smooth driving experience, making it an attractive choice for urban commuters.",
     "fuelConsumption": "10.8",
@@ -233,6 +187,60 @@
     "address": "321 Example Lane, Kharkiv, Ukraine",
     "rentalConditions": "Minimum age: 21\nValid driver's license\nSecurity deposit and insurance required",
     "mileage": 3854
+  },
+  {
+    "id": 9512,
+    "year": 2020,
+    "make": "Volvo",
+    "model": "XC60",
+    "type": "SUV",
+    "img": "https://ftp.goit.study/img/cars-test-task/volvo_xc60_2.jpeg",
+    "photoLink": "https://ftp.goit.study/img/cars-test-task/volvo_xc60_2.jpeg",
+    "description": "The Volvo XC60 is a luxurious and versatile SUV that combines Scandinavian design, advanced safety features, and a comfortable driving experience, making it an ideal choice for families and adventure enthusiasts.",
+    "fuelConsumption": "8.5",
+    "engineSize": "2.0L 4-cylinder",
+    "accessories": [
+      "Leather upholstery",
+      "Panoramic sunroof",
+      "Harman Kardon premium sound system"
+    ],
+    "functionalities": [
+      "All-Wheel Drive",
+      "City Safety collision avoidance technology",
+      "Power tailgate"
+    ],
+    "rentalPrice": "$70",
+    "rentalCompany": "Premium Car Rentals",
+    "address": "987 Example Road, Dnipro, Ukraine",
+    "rentalConditions": "Minimum age: 25\nValid driver's license\nSecurity deposit and insurance required",
+    "mileage": 6618
+  },
+  {
+    "id": 9618,
+    "year": 2020,
+    "make": "Land Rover",
+    "model": "Range Rover Sport",
+    "type": "SUV",
+    "img": "https://ftp.goit.study/img/cars-test-task/land_rover_range_rover_sport.jpeg",
+    "photoLink": "https://ftp.goit.study/img/cars-test-task/land_rover_range_rover_sport.jpeg",
+    "description": "The Land Rover Range Rover Sport is a premium SUV that offers a perfect blend of luxury, off-road capability, and dynamic performance, providing a refined driving experience both on and off the road.",
+    "fuelConsumption": "11.8",
+    "engineSize": "3.0L V6",
+    "accessories": [
+      "Premium Windsor leather seats",
+      "Meridian surround sound system",
+      "Adaptive Dynamics suspension"
+    ],
+    "functionalities": [
+      "All-Wheel Drive",
+      "Terrain Response 2 system",
+      "Power-operated gesture tailgate"
+    ],
+    "rentalPrice": "$90",
+    "rentalCompany": "Luxury SUV Rentals",
+    "address": "654 Example Street, Lviv, Ukraine",
+    "rentalConditions": "Minimum age: 25\nValid driver's license\nSecurity deposit and insurance required",
+    "mileage": 4856
   },
   {
     "id": 9582,
@@ -365,11 +373,12 @@
     "mileage": 4061
   },
   {
-    "id": 9630,
-    "year": 2020,
+    "id": 9125,
+    "year": 2024,
     "make": "Kia",
     "model": "Rio",
     "type": "Sedan, Hatchback",
+    "img": "https://cdn-ds.com/blogs-media/sites/561/2023/07/10032741/2024-Kia-K5-Driving-Fast-With-Its-Turbocharged-Engine-During-Sunset-Three-Quarter-VIew_o.jpg",
     "photoLink": "https://ftp.goit.study/img/cars-test-task/kia_rio_sedan_hatchback.jpeg",
     "description": "The Kia Rio is a versatile and fuel-efficient vehicle available in both sedan and hatchback body styles, offering a comfortable cabin, modern features, and a smooth driving experience, making it an attractive choice for urban commuters.",
     "fuelConsumption": "6.2",
@@ -786,6 +795,7 @@
     "make": "Chrysler",
     "model": "Voyager",
     "type": "Van/Minivan",
+    "img": "https://www.motortrend.com/uploads/2023/09/7-2024-Chrysler-Pacifica-front-view.jpg",
     "photoLink": "https://ftp.goit.study/img/cars-test-task/chrysler_voyager.jpg",
     "description": "The Chrysler Voyager is a practical and versatile van/minivan that provides comfortable seating, ample cargo space, and a range of convenient features for family-oriented transportation.",
     "fuelConsumption": "8.2",
@@ -812,6 +822,7 @@
     "make": "Kia",
     "model": "Rio",
     "type": "Hatchback",
+    "img": "https://cdn.motor1.com/images/mgl/3WA9qY/s3/2024-hyundai-elantra.jpg",
     "photoLink": "https://ftp.goit.study/img/cars-test-task/kia_rio_hatchback.jpeg",
     "description": "The Kia Rio is a compact and fuel-efficient hatchback that offers a blend of affordability, reliability, and practicality, making it an excellent choice for urban commuting and everyday driving.",
     "fuelConsumption": "6.2",

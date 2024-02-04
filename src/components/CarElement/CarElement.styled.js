@@ -7,7 +7,7 @@ display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: space-between;
-  flex-basis: calc((100% -1 * 15px) / 2);
+  flex-basis: calc((100% - 1 * 16px) / 2);
   gap: 17px;
 
   @media screen and (min-width: 768px) {
@@ -17,10 +17,10 @@ display: flex;
   }
 
   @media screen and (min-width: 1440px) {
-    flex-basis: calc((100% - 2 * 20px) / 3);
+    flex-basis: calc((100% - 3 * 29px) / 4);
     width: 274px;
     height: 426px
-    gap: 29px;
+    gap: 28px;
   }`;
 
 export const CarCard = styled.div`
@@ -29,14 +29,14 @@ export const CarCard = styled.div`
   flex-direction: column;
   align-items: flex-start;
   justify-content: space-between;
-  flex-basis: calc((100% -1 * 15px) / 2);
+  /* flex-basis: calc((100% -1 * 15px) / 2); */
   gap: 8px;
 
   @media screen and (min-width: 768px) {
     gap: 10px;
   }
     @media screen and (min-width: 1440px) {
-    width: 274px;
+    /* width: 274px; */
     height: 354px
     gap: 14px;
   }
@@ -46,6 +46,7 @@ export const ImageBox = styled.div`
   position: relative;
   width: 100%;
   height: 146px;
+  object-fit: cover;
   border-radius: 14px;
   overflow: hidden;
 
@@ -59,29 +60,32 @@ export const ImageBox = styled.div`
 
 export const Img = styled.img`
   height: 146px;
+
   position: absolute;
-  object-fit: cover;
-  object-position: center;
+  /* object-fit: cover;
+  object-position: center; */
   background: linear-gradient(
     180deg,
     rgba(18, 20, 23, 0.5) 2.5%,
     rgba(18, 20, 23, 0) 41.07%
   );
   transition: transform 0.5s cubic-bezier(0.3, 0, 0.3, 1);
-  &hover: {
+  &:hover {
     transform: scale(1.2);
   }
   @media screen and (min-width: 768px) {
     height: 204px;
+    right: -50px;
   }
   @media screen and (min-width: 1440px) {
     height: 268px;
+    right: -65px;
   }
 `;
 
 export const InfoContainer = styled.div`
   display: flex;
-  flex-directioc: column;
+  flex-direction: column;
   width: 100%;
   gap: 8px;
 `;
@@ -102,9 +106,10 @@ export const TitleBox = styled.div`
   }
 `;
 export const Title = styled.div`
+  display: flex;
   font-size: inherit;
   font-weight: inherit;
-  line-heit: 24px;
+  line-height: 24px;
   > span {
     color: rgba(52, 112, 255, 1);
   }
@@ -121,8 +126,9 @@ export const InfoList = styled.ul`
   gap: 6px;
   color: rgba(138, 138, 137, 1);
   white-space: nowrap;
-  overflow-x: ${props => props.$overflow || 'hidden'};
+  overflow-x: ${props => props.overflow || 'hidden'};
   overflow-y: hidden;
+  list-style-type: none;
 `;
 export const InfoElement = styled.li`
   color: rgba(138, 138, 137, 1);
@@ -133,15 +139,19 @@ export const InfoElement = styled.li`
   margin-right: 6px;
   border-right: 1px solid rgba(18, 20, 23, 0.1);
   flex-shrink: 0;
+  position: relative;
 
-  &:last-child {
-    border-right: none;
-    padding-right: 0px;
-    margin-right: 0px;
-    flex-shrink: 1;
-    overflow: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis;
+  &:not(:first-child) {
+    &:before {
+      content: '';
+      position: absolute;
+      top: 80%;
+      right: -8px;
+      /* transform: translateY(-50%); */
+      height: 70%;
+      width: 1px;
+      background-color: rgba(18, 20, 23, 0.1);
+    }
   }
 `;
 

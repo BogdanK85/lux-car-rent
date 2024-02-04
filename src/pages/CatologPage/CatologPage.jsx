@@ -1,7 +1,12 @@
-const { ListOfCars } = require('components/ListOfCars/ListOfCars');
+import { ListOfCars } from 'components/ListOfCars/ListOfCars';
 
 const Catalog = () => {
-  return <ListOfCars />;
+  return (
+    <>
+      <div>Catalog</div>
+      <ListOfCars />;
+    </>
+  );
 };
 
 export default Catalog;

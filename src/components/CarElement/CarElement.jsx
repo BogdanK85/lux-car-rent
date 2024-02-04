@@ -1,4 +1,3 @@
-import sprite from '../../images/sprite.svg';
 import {
   CarCard,
   CarElementStyled,
@@ -13,7 +12,7 @@ import {
   TitleBox,
 } from './CarElement.styled';
 
-export const CarElement = ({ car }) => {
+export const CarElement = ({ car, index }) => {
   const {
     id,
     year,
@@ -26,7 +25,9 @@ export const CarElement = ({ car }) => {
     rentalCompany,
     address,
   } = car;
+
   const addressInfo = address?.split(', ').slice(-2);
+
   return (
     <CarElementStyled key={id}>
       <CarCard>
@@ -38,9 +39,9 @@ export const CarElement = ({ car }) => {
             }
             alt="car"
           />
-          <Heart>
+          {/* <Heart>
             <use href={`${sprite}#icon-heart`} />
-          </Heart>
+          </Heart> */}
         </ImageBox>
         <InfoContainer>
           <TitleBox>
@@ -58,7 +59,10 @@ export const CarElement = ({ car }) => {
             </InfoList>
             <InfoList>
               <InfoElement>{type}</InfoElement>
-              <InfoElement>{model}</InfoElement>
+              <InfoElement>
+                {' '}
+                {index === 10 ? make : index === 0 || index > 4 ? model : make}
+              </InfoElement>
               <InfoElement>{id}</InfoElement>
               <InfoElement>{functionalities[0]}</InfoElement>
             </InfoList>
