@@ -5,7 +5,8 @@ display: flex;
   width: 100%;
   width: 150px;
   flex-direction: column;
-  align-items: flex-start;
+  /* align-items: flex-start; */
+  margin: 0;
   justify-content: space-between;
   flex-basis: calc((100% - 1 * 16px) / 2);
   gap: 17px;
@@ -29,21 +30,24 @@ export const CarCard = styled.div`
   flex-direction: column;
   align-items: flex-start;
   justify-content: space-between;
-  /* flex-basis: calc((100% -1 * 15px) / 2); */
+  flex-basis: calc((100% -1 * 16px) / 2);
   gap: 8px;
 
   @media screen and (min-width: 768px) {
+    flex-basis: calc((100% - 2 * 20px) / 3);
+    width: 209px;
     gap: 10px;
   }
-    @media screen and (min-width: 1440px) {
-    /* width: 274px; */
-    height: 354px
+  @media screen and (min-width: 1440px) {
+    width: 274px;
+    height: 354px;
+    flex-basis: calc((100% - 3 * 29px) / 4);
     gap: 14px;
   }
 `;
 export const ImageBox = styled.div`
-  display: block;
   position: relative;
+  display: block;
   width: 100%;
   height: 146px;
   object-fit: cover;
@@ -59,11 +63,16 @@ export const ImageBox = styled.div`
 `;
 
 export const Img = styled.img`
-  height: 146px;
-
   position: absolute;
-  /* object-fit: cover;
-  object-position: center; */
+  height: 146px;
+  top: 0;
+  right: -37px;
+  /* width: 100%;  */
+  /* height: 100%; */
+  margin: 0;
+  padding: 0;
+  /* object-fit: cover; */
+  /* object-position: center; */
   background: linear-gradient(
     180deg,
     rgba(18, 20, 23, 0.5) 2.5%,
@@ -124,6 +133,7 @@ export const InfoList = styled.ul`
   display: inline-flex;
   height: 18px;
   gap: 6px;
+  padding: 0px;
   color: rgba(138, 138, 137, 1);
   white-space: nowrap;
   overflow-x: ${props => props.overflow || 'hidden'};

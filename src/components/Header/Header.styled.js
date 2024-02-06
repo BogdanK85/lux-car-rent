@@ -12,7 +12,7 @@ export const Header = styled.header`
   background-color: #96b5fc;
 `;
 export const Logo = styled.div`
-  width: 30px;
+  width: 130px;
 `;
 export const NavigationStyle = styled.nav`
   display: flex;

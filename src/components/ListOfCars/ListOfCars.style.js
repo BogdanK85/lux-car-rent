@@ -5,6 +5,7 @@ export const ListOfCarsStyle = styled.ul`
   flex-wrap: wrap;
   margin-bottom: 100px;
   column-gap: 15px;
+  margin: 0px auto 20px;
   row-gap: 20px;
   /* background: aqua; */
 

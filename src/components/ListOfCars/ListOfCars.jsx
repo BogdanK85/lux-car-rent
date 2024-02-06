@@ -1,4 +1,6 @@
 import { CarElement } from 'components/CarElement/CarElement';
+import { Section } from 'components/Section/Secrion';
+import { Container } from 'components/Section/Section.styled';
 // import { Section } from 'components/Section/Secrion';
 import { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
@@ -37,19 +39,23 @@ export const ListOfCars = () => {
 
   return (
     <>
-      <ListOfCarsStyle>
-        {/* <div>list</div> */}
-        {/* {console.log(cars)} */}
-        {cars.map((car, index) => (
-          <CarElement car={car} key={car.id} index={index} />
-        ))}
-      </ListOfCarsStyle>
-      <LoadMore
-        onClick={onClickLoadMore}
-        display={isLoadMore ? 'none' : 'block'}
-      >
-        Load More
-      </LoadMore>
+      <Section>
+        {/* <Container> */}
+        <ListOfCarsStyle>
+          {/* <div>list</div> */}
+          {/* {console.log(cars)} */}
+          {cars.map((car, index) => (
+            <CarElement car={car} key={car.id} index={index} />
+          ))}
+        </ListOfCarsStyle>
+        <LoadMore
+          onClick={onClickLoadMore}
+          display={isLoadMore ? 'none' : 'block'}
+        >
+          Load More
+        </LoadMore>
+        {/* </Container> */}
+      </Section>
     </>
   );
 };

@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import { styled } from 'styled-components';
 import bgImage from '../../images/rent-car-hero.png';
 
@@ -9,7 +10,7 @@ export const HeroBox = styled.div`
   background-size: auto;
   display: flex;
   width: 100%;
-  height: calc(81vh - 65px);
+  height: calc(100vh - 65px);
   flex-direction: column;
   align-items: center;
   justify-content: end;
@@ -24,17 +25,17 @@ export const HeroTitle = styled.h1`
   text-align: center;
   color: #0400ee;
 `;
-export const HeroBtn = styled.button`
+export const HeroLink = styled(Link)`
   padding: 12px 50px;
   width: 168px;
   height: 44px;
   color: #fff;
   background: rgba(52, 112, 255, 1);
   cursor: pointer;
-  font-weight: 700;
+  font-weight: 900;
   border-radius: 12px;
   text-transform: uppercase;
-  margin: 25px;
+  margin: 0 auto;
   overflow: hidden;
   position: relative;
   transition: background 0.3s ease-in-out;
