@@ -146,7 +146,8 @@ export const InfoElement = styled.li`
   font-weight: 400;
   line-height: 18px;
   padding-right: 6px;
-  margin-right: 6px;
+  /* margin-right: 3px; */
+  /* gap: 6px; */
   border-right: 1px solid rgba(18, 20, 23, 0.1);
   flex-shrink: 0;
   position: relative;
@@ -165,7 +166,7 @@ export const InfoElement = styled.li`
   }
 `;
 
-export const LearnBtn = styled.button`
+export const Button = styled.button`
   display: flex;
   justify-content: center;
   height: 44px;
@@ -174,6 +175,7 @@ export const LearnBtn = styled.button`
   font-weight: 600;
   line-height: 1.4;
   border-radius: 12px;
+  border: none;
   padding: 12px;
   background: rgba(52, 112, 255, 1);
   color: rgba(255, 255, 255, 1);
@@ -182,4 +184,15 @@ export const LearnBtn = styled.button`
   &:focus {
     background: rgba(11, 68, 205, 1);
   }
+`;
+
+export const Heart = styled.svg`
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  fill: ${props => props.fill || 'none'};
+  stroke: ${props => props.stroke || 'var(--color-text-button-and-back)'};
+  display: inline-block;
+  width: 18px;
+  height: 18px;
 `;

@@ -1,5 +1,5 @@
 import { CarElement } from 'components/CarElement/CarElement';
-import { Section } from 'components/Section/Secrion';
+import { Section } from 'components/Section/Section';
 // import { Container } from 'components/Section/Section.styled';
 // import { Section } from 'components/Section/Secrion';
 import { useEffect, useState } from 'react';

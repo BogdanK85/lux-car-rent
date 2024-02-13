@@ -9,10 +9,12 @@ import {
   PURGE,
   REGISTER,
 } from 'redux-persist';
+import { favoriteCarsPersistReducer } from './favoriteCarsSlice';
 
 export const store = configureStore({
   reducer: {
     cars: carReducer,
+    favoriteCars: favoriteCarsPersistReducer,
   },
   middleware: getDefaultMiddleware =>
     getDefaultMiddleware({

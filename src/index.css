@@ -5,6 +5,20 @@
   box-sizing: border-box;
 }
 
+:root {
+  --color-text-main: rgba(18, 20, 23, 1);
+  --color-text-second: rgba(18, 20, 23, 0.5);
+  --color-text-conditions: #363535;
+  --color-text-button-and-back: #fff;
+  --color-text-loadmore: #3470ff;
+  --color-text-loadmore-hover: #0b44cd;
+  --color-text-label: #8a8a89;
+  --color-button: #3470ff;
+  --color-button-hover: #0b44cd;
+  --color-filter-field: #f7f7fb;
+  --color-back-conditions: #f9f9f9;
+  --color-modal-wrap: rgba(18, 20, 23, 0.5);
+}
 body,
 html {
   margin: 0;
@@ -50,7 +64,7 @@ img {
 }
 
 a {
-  color: currentColor;
+  /* color: currentColor; */
   text-decoration: none;
 }
 

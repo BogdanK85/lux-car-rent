@@ -1,18 +1,28 @@
+import { useDispatch, useSelector } from 'react-redux';
+import sprite from '../../images/sprite.svg';
+import { addFavoriteCar, deleteFavoriteCar } from 'redux/favoriteCarsSlice';
+import { selectFavoriteCars } from 'redux/selectors';
 import {
+  Button,
   CarCard,
   CarElementStyled,
+  Heart,
   ImageBox,
   Img,
   InfoContainer,
   InfoElement,
   InfoList,
   InfoListBox,
-  LearnBtn,
   Title,
   TitleBox,
 } from './CarElement.styled';
+import { useEffect, useState } from 'react';
+import { ModalWindowWrap } from 'components/ModalWindowWrap/ModalWindowWrap';
+import { ModalReadMare } from 'components/ModalReadMore/ModalReadMore';
 
 export const CarElement = ({ car, index }) => {
+  const dispatch = useDispatch();
+  const favoriteCarsId = useSelector(selectFavoriteCars);
   const {
     id,
     year,
@@ -28,20 +38,50 @@ export const CarElement = ({ car, index }) => {
 
   const addressInfo = address?.split(', ').slice(-2);
 
+  const [isCarFavorite, setIsCarFavorite] = useState(false);
+  const [showModal, setShowModal] = useState(false);
+
+  useEffect(() => {
+    if (favoriteCarsId?.some(car => car.id === id)) {
+      setIsCarFavorite(true);
+    } else {
+      setIsCarFavorite(false);
+    }
+  }, [favoriteCarsId, id]);
+
+  const onClickHeart = () => {
+    isCarFavorite
+      ? dispatch(deleteFavoriteCar(id))
+      : dispatch(addFavoriteCar(car));
+  };
+  const toggleModal = () => {
+    setShowModal(prevState => !prevState);
+  };
+
   return (
     <CarElementStyled key={id}>
+      {showModal && (
+        <ModalWindowWrap onClick={toggleModal}>
+          <ModalReadMare car={car} key={id} />
+        </ModalWindowWrap>
+      )}
       <CarCard>
         <ImageBox>
           <Img
-            src={
-              //   "../../images/hyundai_tucson.jpg"
-              img ? img : '../../images/image_not_available.png'
-            }
+            src={img ? img : '../../images/image_not_available.png'}
             alt="car"
           />
-          {/* <Heart>
+          <Heart
+            onClick={onClickHeart}
+            fill={isCarFavorite ? 'var(--color-button)' : 'none'}
+            stroke={
+              isCarFavorite
+                ? 'var(--color-button)'
+                : 'var(--color-text-button-and-back)'
+            }
+          >
             <use href={`${sprite}#icon-heart`} />
-          </Heart> */}
+          </Heart>
         </ImageBox>
         <InfoContainer>
           <TitleBox>
@@ -69,7 +109,7 @@ export const CarElement = ({ car, index }) => {
           </InfoListBox>
         </InfoContainer>
       </CarCard>
-      <LearnBtn>Learn More</LearnBtn>
+      <Button onClick={toggleModal}>Learn More</Button>
     </CarElementStyled>
   );
 };
