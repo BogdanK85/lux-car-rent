@@ -1,5 +1,5 @@
 import { CarElement } from 'components/CarElement/CarElement';
-import { ListOfCarsStyle } from 'components/ListOfCars/ListOfCars.style';
+import { ListOfCarsStyle } from 'components/ListOfCars/ListOfCars.styled';
 import { Section } from 'components/Section/Section';
 import { EmptyPage, LinkStyled } from 'pages/allPagesStyles.styled';
 import { useSelector } from 'react-redux';

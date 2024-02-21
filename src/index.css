@@ -1,9 +1,9 @@
 /* @import-normalize; */
 @import '~normalize.css';
 /* @import-normalize; */
-* {
+/* * {
   box-sizing: border-box;
-}
+} */
 
 :root {
   --color-text-main: rgba(18, 20, 23, 1);
@@ -74,4 +74,8 @@ button {
 
 html {
   scroll-behavior: smooth;
+}
+
+* {
+  box-sizing: border-box;
 }
