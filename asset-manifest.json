@@ -1,9 +1,9 @@
 {
   "files": {
     "main.css": "/lux-car-rent/static/css/main.14bc286b.css",
-    "main.js": "/lux-car-rent/static/js/main.74504627.js",
+    "main.js": "/lux-car-rent/static/js/main.cc43265b.js",
     "static/js/238.3a705692.chunk.js": "/lux-car-rent/static/js/238.3a705692.chunk.js",
-    "static/js/463.519b195a.chunk.js": "/lux-car-rent/static/js/463.519b195a.chunk.js",
+    "static/js/463.1a7ad5fc.chunk.js": "/lux-car-rent/static/js/463.1a7ad5fc.chunk.js",
     "static/js/172.cef79444.chunk.js": "/lux-car-rent/static/js/172.cef79444.chunk.js",
     "static/js/608.6f6c1f63.chunk.js": "/lux-car-rent/static/js/608.6f6c1f63.chunk.js",
     "static/js/695.ef731e88.chunk.js": "/lux-car-rent/static/js/695.ef731e88.chunk.js",
@@ -12,15 +12,15 @@
     "index.html": "/lux-car-rent/index.html",
     "static/media/sprite.svg": "/lux-car-rent/static/media/sprite.72546160259a3205d0d512cd9e5120c3.svg",
     "main.14bc286b.css.map": "/lux-car-rent/static/css/main.14bc286b.css.map",
-    "main.74504627.js.map": "/lux-car-rent/static/js/main.74504627.js.map",
+    "main.cc43265b.js.map": "/lux-car-rent/static/js/main.cc43265b.js.map",
     "238.3a705692.chunk.js.map": "/lux-car-rent/static/js/238.3a705692.chunk.js.map",
-    "463.519b195a.chunk.js.map": "/lux-car-rent/static/js/463.519b195a.chunk.js.map",
+    "463.1a7ad5fc.chunk.js.map": "/lux-car-rent/static/js/463.1a7ad5fc.chunk.js.map",
     "172.cef79444.chunk.js.map": "/lux-car-rent/static/js/172.cef79444.chunk.js.map",
     "608.6f6c1f63.chunk.js.map": "/lux-car-rent/static/js/608.6f6c1f63.chunk.js.map",
     "695.ef731e88.chunk.js.map": "/lux-car-rent/static/js/695.ef731e88.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.14bc286b.css",
-    "static/js/main.74504627.js"
+    "static/js/main.cc43265b.js"
   ]
 }
