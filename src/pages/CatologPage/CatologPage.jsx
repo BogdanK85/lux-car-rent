@@ -5,7 +5,6 @@ import { Section } from 'components/Section/Section';
 const Catalog = () => {
   return (
     <>
-      <div>Catalog</div>
       <Section>
         <Filters />
       </Section>
